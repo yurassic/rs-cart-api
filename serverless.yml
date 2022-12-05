@@ -2,10 +2,13 @@ service: card-service
 
 plugins:
   - serverless-offline
+  - serverless-dotenv-plugin
 
 provider:
   name: aws
   runtime: nodejs14.x
+  region: eu-west-1
+  stage: dev
 
 functions:
   cardService:
