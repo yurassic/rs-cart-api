@@ -60,6 +60,20 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Mock SQL scripts
+
+```sql
+insert into cards (user_id, created_at, updated_at) values
+('8dc4d85f-ad91-4199-9e49-bcfcd7800bab', '2008-11-11', '2020-12-01'),
+('8ae7f220-d6f6-471f-880f-b3ea8d84aedd', '2012-04-25', '2018-06-21')
+```
+
+```sql
+insert into card_items (card_id, product_id, count) values
+('e73cf719-9831-43b4-a5d6-83cb5b0c8b2b', '657cdb32-83ae-46fa-a721-c0d21f839e34', '5'),
+('0d795833-2679-459f-b309-1cd625994842', '8dc4d85f-ad91-4199-9e49-bcfcd7800bab', '12')
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
